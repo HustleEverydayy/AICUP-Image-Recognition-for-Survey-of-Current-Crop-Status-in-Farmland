@@ -15,7 +15,7 @@
 	
         pathlib
 	
-	      Third party library
+	Third party library
 	      
         Pillow
 	
@@ -26,7 +26,6 @@
         Matplotlib
 	
 預訓練模型:	 InceptionV3
-
             EfficientNetB0
 	    
 額外資料集	無
@@ -44,7 +43,7 @@ Step-2 首先B0_train_program.py要跟train_images放同一個資料夾
 Step-3 把fbl_en0e60.pth丟進PyTorch_Prediction_en.py的資料夾並把他改成model.load_state_dict(torch.load("fbl_en0e60.pth")) ，並用cmd去執行，指令如下:
 
       python PyTorch_Prediction_en.py -d test_images -m fbl_en0e60.pth.pth -o b0_output.csv -b 200
-                     檔名                  測試資料集          訓練模型名字              輸出csv檔      速度調整
+                     檔名                 測試資料集       訓練模型名字          輸出csv檔      速度調整
 
 Step-4 首先將(secret_labels)、(Test20000.csv)、(b0_output.csv)一起丟到(Farmland_Submit1.ipynb)裡面去執行
 
