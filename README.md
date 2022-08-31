@@ -2,19 +2,33 @@
 近年來民生、工業、醫療等都有完整的AI資料集，但在農業方面數據相對缺乏，故在未來AI智慧農業需求上，將需要投入大量的專業人力進行農業數據蒐集及分析作業。本專題將運用官方提供的圖片，利用深度學習(CNN神經網路)和集成學習去訓練模型，集成學習可以結合眾多的模型產生一個更強大的模型，讓我們可以精確地去影像辨識農作物的類別。
 
 #作業系統:	Windows 10
+
 語言:	Python 3.7
+
 套件:	Standard Library
+
         os
+	
         glob
+	
         time
+	
         pathlib
+	
 	      Third party library
+	      
         Pillow
+	
         numpy
+	
         PyTorch
+	
         Matplotlib
+	
 預訓練模型:	 InceptionV3
+
             EfficientNetB0
+	    
 額外資料集	無
 
 Step-1 用Crop_inceptionV3切圖時，記得將fbl_pt2-E61.pth放在同一個資料夾下，並執行。
